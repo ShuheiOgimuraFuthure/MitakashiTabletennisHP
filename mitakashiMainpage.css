@@ -1,0 +1,145 @@
+/*おまじない、ブラウザごとにデフォルトで設定されているbodytag等の設定を下記の記載でリセット*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    font-family: "ＭＳ 明朝",serif;
+    /* background-image: body要素に追加すると背景になる*/
+    background-image: url('o0960054013978378160.jpg');
+    /* background-size:cover にすると画像一枚をいい感じの寸法にしてくれるはず*/
+    background-size: cover;
+}
+
+li{
+    float: left;
+    box-sizing: border-box;
+}
+
+.header{
+    /*幅指定、これでこの範囲に下記の内容を繁栄するとなる*/
+    height:100px;
+
+    /* カッコのはじめの部分ですが、プレフィックス付きはグラデーションの開始位置を指定するのでtop。通常の書き方は方向を指定するからto bottom（下方向へ、という意味）
+    -gradient　がグラデーションをしていするのに使う*/
+    /*プレフィックスとは？プロパティ名の前に書く「-webkit-」「-moz-」「-o-」「-ms-」の文字のこと、下記ではこのブラウザにlinear-gradientを対応させる意味で使う*/
+   /* background: -moz-linear-gradient(top, from(rgba(255, 183, 78,0.5)),to(rgba(#FFF,0.5)));
+    background: -webkit-linear-gradient(top, #ffb74e, #FFF);
+    background: linear-gradient(to bottom, #ffb74e, #FFF);
+    /*透過の判定を決める(全体（文字とかにも繁栄される）)*/
+    /*opacity: 0.5;*/
+    /*opacity:を使うと全てに対して透過が掛かっちゃうのでrgbaを使用、ただそのまま使うとグラデーションが消えるので組み合わせが必要*/
+    /*rgbaは→background:rgba(0, 0, 0, 1)で使う*/
+    background: -o-linear-gradient(bottom, rgba(255, 183, 78, 0.8), rgba(255, 255, 255, 0.4));
+    background: -moz-linear-gradient(bottom, rgba(255, 183, 78, 0.8), rgba(255, 255, 255, 0.4));
+    background: -webkit-linear-gradient(bottom, rgba(255, 183, 78, 0.8), rgba(255, 255, 255, 0.4));
+    background: linear-gradient(to bottom, rgba(255, 183, 78, 0.8), rgba(255, 255, 255, 0.4));
+
+    animation-name: fadeInAnime;
+    animation-duration: 3s;
+    /*アニメーション終了後の状態を表す(forwardsは最後のキーフレーム（１００％）の状態、最初を表したい場合はbackwordsを指定するとよい)*/
+    animation-fill-mode: forwards;
+}
+
+/*キーフレームアニメーションはアニメーションの開始から（0％）終了までの任意の経過地点にプロパティをしてできるアニメーションのこと
+（プロパティを指定した経過地点のことをキーフレームと呼ぶy）*/
+/*別枠でtransitionがあり、こちらは対象のプロパティ（上記のheaderとか）に対して
+transition: all（度のプロパティにアニメーションを適用するから指定するプロパティ） 300ms（アニメーション開始から終了までの所要時間を指定するプロパティ） 0s（アニメーションが開始するまでの遅延時間を指定するプロパティ。） easeアニメーションのイージングを指定するプロパティ。*/
+/*@keyframes 上のアニメーション/
+@keyframes animation-name:名前　で指定することで紐づけることが出来る*/
+
+@keyframes fadeInAnime{
+    0%{
+        /*要素の透明度*/
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInAnimeYoko{
+    0%{
+        /*要素の透明度*/
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+
+/*ページ内タイトル*/
+.heade-logo{
+    float: left;
+    font-size: 40px;
+    padding: 25px 20px;
+    color: white;
+}
+
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 20px;
+    font-size: 20px;
+    
+}
+
+li{
+    /*こっちにcolor指定しても上手くいかない*/
+    padding: 40px 15px; 
+}
+
+a{
+/*link　aに指定したらうまいこといった*/
+    color: white;
+}
+/*大会情報・お申し込み*/
+.tornament-info-entry{
+    
+}
+
+/*大会情報・お申し込み*/
+.mitakashiexplanation{
+   
+}
+
+/*お問い合わせ*/
+.inquiry-information{
+   
+}
+
+/*練習会情報*/
+.traninginfo{
+    
+}
+
+h1{
+    padding: 35px 25px;
+    font-size: 80px;
+    color: white;
+    animation-name: fadeInAnimeYoko;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
