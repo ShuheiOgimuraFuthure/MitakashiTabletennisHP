@@ -1,1 +1,8 @@
 gitにPushする用のテスト
+push から　commitのテストを行う　
+command は下記
+git status　（確認）赤色になってれば良き
+git add .
+git status　（確認）緑になっていればよき
+git commit -m"commitmessage"
+git push OK!
