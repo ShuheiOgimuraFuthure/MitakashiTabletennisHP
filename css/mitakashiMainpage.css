@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*おまじない、ブラウザごとにデフォルトで設定されているbodytag等の設定を下記の記載でリセット*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*-------初期設定-------*/
+html{
+    font-size: 100%;
+}
+
+ul{
+    list-style: none;
+}
+/*-------初期設定-------*/
+
+/*-------背景画像--------*/
+#home{
+    background-image: url(/images/tabletennis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 110px;
+    min-height: 100vh;
+    /*opacity: 0.5;*/
+}
+
+/*-------body--------*/
+body{
+    background-color: dimgrey;
+    /*background-image: url(/images/tabletennis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 10px;
+    background-position: 0px 150px;*/
+}
+
+/*-------「三鷹市卓球連盟」--------*/
+h1{
+    font-family: serif;
+    font-size: 65px;
+    color: white;
+}
+
+/*-------「キャッチコピー」--------*/
+h2{
+    font-family: serif;
+    font-size: 50px;
+    margin-left: 150px;
+    color: white;
+}
+
+/*-------「ナビゲーションメニュー」（大会参照、お問い合わせ、ギャラリー、リンク--------*/
+.main-nav{
+    display: flex;
+    margin-top: 10px;
+}
+
+/*-------各種リンクの外側の余白--------*/
+.main-nav li{
+    margin-left: 36px;
+}
+
+/*-------「三鷹市卓球連盟」と「ナビゲーションメニュー」を横並び--------*/
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-------ヘッダー部分の最大幅指定--------*/
+.wrapper{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 auto;
+}

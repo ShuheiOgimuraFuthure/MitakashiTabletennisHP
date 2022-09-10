@@ -8,7 +8,7 @@
 body{
     font-family: "ＭＳ 明朝",serif;
     /* background-image: body要素に追加すると背景になる*/
-    background-image: url('o0960054013978378160.jpg');
+    background-image: url('/images\tabletennis.jpg');
     /* background-size:cover にすると画像一枚をいい感じの寸法にしてくれるはず*/
     background-size: cover;
 }
@@ -84,7 +84,7 @@ transition: all（度のプロパティにアニメーションを適用する�
     float: left;
     font-size: 40px;
     padding: 25px 20px;
-    color: white;
+    color: black;
 }
 
 
