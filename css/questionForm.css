@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* outline: dashed 1px black; ←これめっちゃ便利　視覚的にBoxが理解できる*/
+
+*{
+    box-sizing: border-box;
+  }
+  .flexbox{
+    outline: dashed 1px black;
+    /* 子要素を水平方向の中央に配置する */
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    height: 100vh;
+   /* position: absolute;
+  top: 5%; 
+  left: 35%;*/
+
+}
+
+h2{
+    outline: dashed 1px black;
+
+}
+
+a{
+    font-size: 24px;
+    outline: dashed 1px black;
+
+}
+
+form{
+    width: 70%;
+    outline: dashed 1px black;
+
+}
+.qustion{
+    align-items: center;
+
+}

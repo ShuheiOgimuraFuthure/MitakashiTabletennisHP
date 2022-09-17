@@ -13,22 +13,26 @@
 </head>
 
 <body>
-  
+    <div class="flexbox">
         <a href="mainPage.html"> 三鷹市卓球連盟HP</a>
 
         <h2>お問い合わせ</h2>
-        <div class="flexbox">ß
-        <form method="POST" action="">
-            <p>お名前<br>
-                <input type="text" id="name" name="name" maxlength="50" required placeholder="山田　太郎">
-                <p>メールアドレス <br>
-                    <input type="email" id="email" name="email" size="email" maxlength="50" required
-                        placeholder="例：mitakashi@email.com">
-                </p>
 
-                <p>お問い合せ内容 <br>
-                    <textarea id="question" name="question" cols="50" required placeholder="ご質問をご記入ください"></textarea>
-                </p>
+        <form method="POST" action="">
+            <div class="qustion">
+                <p>お名前</p>
+                <input type="text" id="name" name="name" maxlength="50" required placeholder="山田　太郎">
+
+            </div>
+            <div class="qustion">
+                <p>メールアドレス</p>
+                <input type="email" id="email" name="email" size="email" maxlength="50" required
+                    placeholder="例：mitakashi@email.com">
+            </div>
+            <div class="qustion">
+                <p>お問い合せ内容 </p>
+                <textarea id="question" name="question" cols="50" required placeholder="ご質問をご記入ください"></textarea>
+            </div>
         </form>
     </div>
 </body>
