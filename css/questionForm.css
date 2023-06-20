@@ -5,12 +5,14 @@
     box-sizing: border-box;
   }
   .flexbox{
+    
     outline: dashed 1px black;
     /* 子要素を水平方向の中央に配置する */
     display: flex;
     flex-direction:  column;
     align-items: center;
     height: 100vh;
+    background-color: #94c674;
    /* position: absolute;
   top: 5%; 
   left: 35%;*/
@@ -19,21 +21,54 @@
 
 h2{
     outline: dashed 1px black;
-
+    width: 100%;
+    padding: 0,30px;
+    text-align: center; 
 }
 
 a{
-    font-size: 24px;
+    width: 100%;
+    padding: 40px;
+    background-color: #00a5dd;
+    font-size: 30px;
     outline: dashed 1px black;
-
+    text-align: center; 
+    text-decoration: none;
+    color: #000;
 }
 
+/*フォームの画面*/
 form{
-    width: 70%;
+    width: 60%;
     outline: dashed 1px black;
-
+    margin: 5,5 ;
 }
+
+/*画面のテキスト*/
+form > div{
+    outline: dashed 1px black;
+    font-size: 24px;
+}
+
+/*名前とメアド*/
+form > input{
+    outline: dashed 1px black;
+    font-size: 24px;
+    width: 100%;
+}
+
+/*質問内容入力画面*/
+form > textarea{
+    outline: dashed 1px black;
+    font-size: 24px;
+    width: 100%;
+}
+
 .qustion{
-    align-items: center;
+    width: 40%;
+    outline: dashed 1px black;
+    margin: 0 auto ;
+}
+.qustion > p{
 
 }
